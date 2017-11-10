@@ -1,6 +1,6 @@
 #!/bin/sh
  
-ssh -i /home/jenkins/jenkins.pem ec2-user@54.173.83.44<<EOF
+ssh -i /var/lib/jenkins/jenkins.pem ec2-user@54.173.83.44<<EOF
   cd jenkins-aws-pipeline
   git pull
   npm install --production
